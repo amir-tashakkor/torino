@@ -1,20 +1,8 @@
 [
   {
-    "id": "8df88bb3-0812-41a1-abf3-cac2ba8fb31b",
-    "mobile": "09129273543",
-    "firstName": "امیر",
-    "otpExpires": 1784285082709,
-    "otpCode": "946931",
-    "lastName": "تشکر",
-    "email": "amirtk.dev@gmail.com",
-    "nationalCode": "0480561151",
-    "birthDate": "1993-10-09T22:47:59.000Z",
-    "gender": "male",
-    "fullName": "امیر تشکر",
-    "payment": {
-      "shaba_code": "752785",
-      "debitCard_code": "78527852",
-      "accountIdentifier": "5555555555555555"
-    }
+    "id": "59b145e4-4b95-49d6-9aa7-d49536d1f2b1",
+    "mobile": "09170567571",
+    "otpExpires": 1782940538953,
+    "otpCode": "788412"
   }
 ]
