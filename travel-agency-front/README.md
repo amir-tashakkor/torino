@@ -141,6 +141,9 @@ Some backend endpoints were extended and customized during development to suppor
 
 Frontend Developer
 
+GitHub:
+https://github.com/amir-tashakkor
+
 Focused on building modern web applications with React & Next.js.
 
 ---
