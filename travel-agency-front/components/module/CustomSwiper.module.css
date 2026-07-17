@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.swiper {
+  width: 389px;
+  height: 479px;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  width: 46px;
+  height: 46px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+}
+
+.arrow:hover {
+  transform: scale(1.12);
+}
+
+.counter {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d2d2d;
+}

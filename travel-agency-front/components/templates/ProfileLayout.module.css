@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1440px;
+  width: 100%;
+  margin: 3rem auto 0;
+  padding: 1rem;
+  gap: 3rem;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  min-width: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 15rem;
+  border: 1px solid #00000030;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.sidebar a {
+  width: 100%;
+  text-decoration: none;
+  color: #2b2b2b;
+  transition: 0.25s;
+}
+
+.itemWrapper {
+  margin: 0 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #00000025;
+  box-sizing: border-box;
+}
+
+.sidebar a:last-child .itemWrapper {
+  border-bottom: none;
+}
+
+.itemWrapper img {
+  width: 22px;
+  height: 22px;
+  transition: 0.25s;
+  filter: brightness(0);
+}
+
+.active {
+  background: #28a74540;
+  color: #28a745 !important;
+}
+
+.active .itemWrapper {
+  color: #28a745;
+}
+
+.active .itemWrapper img {
+  filter: invert(51%) sepia(96%) saturate(451%) hue-rotate(87deg)
+    brightness(95%) contrast(88%);
+}
+
+.sidebar a:hover {
+  color: #28a745;
+}
+
+.sidebar a:hover .itemWrapper img {
+  filter: invert(51%) sepia(96%) saturate(451%) hue-rotate(87deg)
+    brightness(95%) contrast(88%);
+}
+
+@media (max-width: 992px) {
+  .container {
+    gap: 1.5rem;
+  }
+
+  .sidebar {
+    min-width: 13rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: unset;
+    flex-direction: row;
+  }
+
+  .sidebar a {
+    flex: 1;
+  }
+
+  .itemWrapper {
+    margin: 0;
+    padding: 0.9rem 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    border-bottom: none;
+    border-left: 1px solid #00000020;
+    text-align: center;
+  }
+
+  .sidebar a:last-child .itemWrapper {
+    border-left: none;
+  }
+
+  .itemWrapper span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.75rem;
+  }
+
+  .itemWrapper {
+    padding: 0.75rem 0.25rem;
+  }
+
+  .itemWrapper img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .itemWrapper span {
+    font-size: 12px;
+  }
+}

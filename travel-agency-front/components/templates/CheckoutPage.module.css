@@ -1,0 +1,298 @@
+.container {
+  width: calc(100% - 300px);
+  margin: 30px auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.formBox {
+  width: 80%;
+  margin-left: 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 25px 40px;
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 10px;
+}
+
+.fields > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.fields > div > span {
+  position: absolute;
+  bottom: -25px;
+  color: #ab4141;
+}
+
+.summary {
+  width: 25%;
+  display: grid;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.formBox input {
+  width: 310px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 18px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  color: gray;
+}
+
+.formBox select {
+  width: 310px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 18px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  color: gray;
+}
+
+.tourInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
+
+.tourInfo p {
+  color: #282828aa;
+}
+
+.dashed {
+  width: 100%;
+  border-top: 1px dashed gray;
+}
+
+.priceBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 20px;
+}
+
+.button {
+  width: 90%;
+  height: 52px;
+  border: none;
+  margin: 25px auto;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #28a745 0%, #1e8e3e 100%);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.25);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #31b64d 0%, #239142 100%);
+  box-shadow: 0 12px 28px rgba(40, 167, 69, 0.35);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.dateInput {
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: calc(100% - 120px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: calc(100% - 80px);
+  }
+
+  .wrapper {
+    gap: 20px;
+  }
+
+  .formBox {
+    width: 65%;
+    padding: 25px;
+  }
+
+  .summary {
+    width: 35%;
+  }
+
+  .formBox input,
+  .formBox select {
+    width: 100%;
+  }
+
+  .fields > div {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .formBox {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .summary {
+    width: 100%;
+  }
+
+  .fields {
+    gap: 35px 15px;
+  }
+
+  .fields > div {
+    flex: 1 1 calc(50% - 15px);
+  }
+
+  .formBox input,
+  .formBox select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .formBox {
+    padding: 20px;
+  }
+
+  .title {
+    gap: 10px;
+  }
+
+  .title h2 {
+    font-size: 20px;
+  }
+
+  .fields {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .fields > div {
+    width: 100%;
+  }
+
+  .formBox input,
+  .formBox select {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .tourInfo,
+  .priceBox {
+    margin: 20px 15px;
+  }
+
+  .tourInfo {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .priceBox {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .button {
+    width: calc(100% - 30px);
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 20px auto;
+  }
+
+  .formBox {
+    padding: 15px;
+    border-radius: 14px;
+  }
+
+  .summary {
+    border-radius: 14px;
+  }
+
+  .formBox input,
+  .formBox select {
+    height: 46px;
+    font-size: 14px;
+  }
+
+  .tourInfo h4 {
+    font-size: 16px;
+  }
+
+  .tourInfo p,
+  .priceBox span,
+  .priceBox strong {
+    font-size: 14px;
+  }
+
+  .button {
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .fields > div > span {
+    font-size: 12px;
+  }
+}

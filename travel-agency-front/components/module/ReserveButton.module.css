@@ -1,0 +1,47 @@
+.reserveButton {
+  width: 180px;
+  height: 52px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #28a745 0%, #1e8e3e 100%);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.25);
+  cursor: pointer;
+}
+
+.reserveButton:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #31b64d 0%, #239142 100%);
+  box-shadow: 0 12px 28px rgba(40, 167, 69, 0.35);
+}
+
+.reserveButton:active {
+  transform: scale(0.97);
+}
+
+.reserveButton:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .reserveButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .reserveButton {
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+  }
+}

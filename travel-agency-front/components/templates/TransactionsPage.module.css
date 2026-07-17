@@ -1,0 +1,138 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  max-width: 1200px;
+  min-width: 0;
+  border: 2px solid #00000057;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.container > * {
+  padding: 20px 14px;
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
+}
+
+.container > *:nth-last-child(-n + 4) {
+  border-bottom: none;
+}
+
+.tableHeader {
+  background: #f3f3f3;
+  font-weight: 700;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0000006b;
+  border-radius: 1rem;
+  padding: 150px 25px;
+  height: 550px;
+  gap: 24px;
+}
+
+.empty p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #666;
+}
+
+.empty img {
+  width: 320px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    font-size: 14px;
+  }
+
+  .container > * {
+    padding: 16px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: none;
+    background: transparent;
+  }
+
+  .tableHeader {
+    display: none;
+  }
+
+  .container > span:not(.tableHeader) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 14px 16px;
+    text-align: right;
+  }
+
+  .container > span:nth-child(4n + 5)::before {
+    content: "تاریخ و ساعت";
+    font-weight: 700;
+    color: #666;
+  }
+
+  .container > span:nth-child(4n + 6)::before {
+    content: "مبلغ";
+    font-weight: 700;
+    color: #666;
+  }
+
+  .container > span:nth-child(4n + 7)::before {
+    content: "نوع تراکنش";
+    font-weight: 700;
+    color: #666;
+  }
+
+  .container > span:nth-child(4n + 8)::before {
+    content: "شماره سفارش";
+    font-weight: 700;
+    color: #666;
+  }
+
+  .container > span:nth-child(4n + 8) {
+    margin-bottom: 12px;
+  }
+
+  .empty {
+    margin: 50px 0;
+    font-size: 20px;
+  }
+
+  .empty img {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container > span:not(.tableHeader) {
+    font-size: 13px;
+    padding: 12px 14px;
+  }
+
+  .empty {
+    font-size: 18px;
+  }
+
+  .empty img {
+    width: 180px;
+  }
+}

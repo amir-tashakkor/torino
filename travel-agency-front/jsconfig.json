@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+     "paths": {
+         "@/utils/*": ["./utils/*"],
+         "@/styles/*": ["./styles/*"],
+         "@/services/*": ["./services/*"],
+         "@/provider/*": ["./provider/*"],
+         "@/tours/*": ["./pages/tours/*"],
+         "@/payment/*": ["./pages/payment/*"],
+         "@/checkout/*": ["./pages/checkout/*"],
+         "@/profile/*": ["./pages/profile/*"],
+         "@/my-tours/*": ["./pages/profile/my-tours/*"],
+         "@/transactions/*": ["./pages/profile/transactions/*"],
+         "@/hooks/*": ["./hooks/*"],
+         "@/configs/*": ["./configs/*"],
+         "@/layout/*": ["./components/layout/*"],
+         "@/modal/*": ["./components/modal/*"],
+         "@/searchForm/*": ["./components/module/searchForm/*"],
+         "@/module/*": ["./components/module/*"],
+         "@/templates/*": ["./components/templates/*"]
+        }
+    }
+}

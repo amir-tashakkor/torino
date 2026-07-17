@@ -1,0 +1,112 @@
+.container {
+  border: 1px solid rgb(197, 197, 197);
+  margin-bottom: 5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editButton {
+  color: #009eca;
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton span {
+  cursor: pointer;
+}
+
+.gridDetail {
+  display: grid;
+  grid-template-columns: repeat(2, max-content 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.editDetail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.editDetail > * {
+  flex-basis: 30%;
+}
+
+.editDetail > * input,
+.editDetail > * select {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid #aeaeae;
+  font-size: 1rem;
+  outline: none;
+  min-width: 190px;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.actions button {
+  padding: 0.5rem 2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.submitAction {
+  background: #28a745;
+  border: none;
+  color: #dafcda;
+}
+
+.cancelAction {
+  background-color: transparent;
+  color: crimson;
+  border: 2px solid crimson;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .head {
+    margin-bottom: 3rem;
+  }
+
+  .label {
+    font-size: 14px;
+    margin: 0.1rem;
+  }
+
+  .value {
+    font-size: 14px;
+    margin: 0.1rem;
+  }
+
+  .editButton {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+
+  .gridDetail {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .editDetail > * {
+    flex-basis: 100%;
+  }
+}

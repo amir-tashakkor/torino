@@ -1,0 +1,47 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+}
+
+.modal {
+  width: 560px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px;
+  position: relative;
+  animation: modal 0.25s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.close {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #444;
+  transition: 0.25s;
+}
+
+.close:hover {
+  transform: translateY(-2px);
+}
+
+@keyframes modal {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

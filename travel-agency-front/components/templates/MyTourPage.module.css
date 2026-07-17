@@ -1,0 +1,330 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  border: 1px solid #00000045;
+  border-radius: 18px;
+  padding: 20px;
+  gap: 20px;
+  background: #fff;
+}
+
+.tour {
+  border: 1px solid #00000020;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+}
+
+.firstChild {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  gap: 10px;
+}
+
+.firstChild h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.lastChild {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex: 1;
+}
+
+.lastChild > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lastChild p {
+  font-size: 15px;
+}
+
+.completed {
+  color: #0f9d58;
+  background: #dff7e8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.inProgress {
+  color: #d97706;
+  background: #fff5d6;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.time {
+  display: flex;
+  padding: 0 24px 20px;
+}
+
+.time > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.time p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.time span {
+  color: #666;
+  font-size: 14px;
+}
+
+.line {
+  border-top: 1px solid #ececec;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+}
+
+.details span {
+  font-size: 15px;
+  color: #444;
+}
+
+.details span + span {
+  margin-right: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #ddd;
+}
+
+.empty {
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.empty p {
+  font-size: 22px;
+  font-weight: 700;
+  color: #666;
+}
+
+.empty img {
+  width: 320px;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .title {
+    padding: 18px;
+  }
+
+  .time {
+    padding: 0 18px 18px;
+  }
+
+  .details {
+    padding: 18px;
+  }
+
+  .firstChild h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  .tour {
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .firstChild {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .firstChild h3 {
+    font-size: 17px;
+  }
+
+  .lastChild {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .lastChild > div:first-child,
+  .lastChild > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .lastChild p {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .lastChild img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 0 16px 16px;
+  }
+
+  .time > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .time .firstChild {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .time p,
+  .time span {
+    font-size: 14px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .details span {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .details span + span {
+    border-right: none;
+    border-top: 1px solid #e5e5e5;
+    padding: 0;
+    margin: 0;
+  }
+
+  .line {
+    margin-top: 6px;
+  }
+
+  .empty {
+    min-height: 380px;
+  }
+
+  .empty img {
+    width: 220px;
+  }
+
+  .empty p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    padding: 14px;
+  }
+
+  .firstChild h3 {
+    font-size: 15px;
+  }
+
+  .firstChild img,
+  .lastChild img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .lastChild {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .lastChild > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .time {
+    padding: 0 14px 14px;
+  }
+
+  .time > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .time p,
+  .time span,
+  .details span {
+    font-size: 13px;
+  }
+
+  .details {
+    padding: 14px;
+  }
+
+  .empty img {
+    width: 170px;
+  }
+
+  .empty p {
+    font-size: 16px;
+  }
+}
