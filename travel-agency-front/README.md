@@ -1,34 +1,148 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ✈️ Torino Travel Agency
 
-## Getting Started
+A modern travel agency web application built with **Next.js**, focused on tour reservation, authentication, user profile management, and a smooth user experience.
 
-First, run the development server:
+---
+
+## 📸 Preview
+
+![Home](./public/screenshots/HomePage.png)
+![TourDetails](./public/screenshots/TourDetails.png)
+![Profile](./public/screenshots/ProfilePage.png)
+
+---
+
+# ✨ Features
+
+- 🔍 Search tours by origin, destination and date
+- 🧳 Tour details page
+- 🛒 Tour reservation flow
+- 👤 Authentication
+- 🧾 User profile management
+- 🎫 My Tours page
+- 💳 Checkout page
+- 📑 Transactions page
+- 🚫 Custom 404 page
+- ✈️ Custom animated loading components
+- 📱 Fully responsive design
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+
+- Next.js
+- React
+- CSS Modules
+- React Hook Form
+- TanStack Query
+- React Hot Toast
+- Zaman Date Picker
+
+### Backend
+
+- REST API
+
+---
+
+# 📂 Project Structure
+
+```
+components/
+│
+├── layout/
+├── module/
+├── modal/
+├── templates/
+│
+pages/
+│
+services/
+│
+utils/
+│
+provider/
+```
+
+---
+
+# 🚀 Getting Started
+
+Clone the project
+
+```bash
+git clone https://github.com/amir-tashakkor/torino.git
+```
+
+Install packages
+
+```bash
+npm install
+```
+
+Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build production
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Run production
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# 📱 Responsive Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is optimized for
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Desktop
+- Laptop
+- Tablet
+- Mobile
 
-## Deploy on Vercel
+using responsive layouts and CSS Modules.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# 🎯 Main Pages
+
+- Home
+- Tour Details
+- Checkout
+- Payment (Demo)
+- User Profile
+- My Tours
+- Transactions
+- 404 Page
+
+---
+
+# 📌 Notes
+
+This project was developed as the final project of a Frontend Bootcamp.
+
+Some backend endpoints were extended and customized during development to support additional frontend features.
+
+---
+
+# 👨‍💻 Developed By
+
+**Amir Tashakkor**
+
+Frontend Developer
+
+Focused on building modern web applications with React & Next.js.
+
+---
+
+⭐ Thanks for visiting this project!

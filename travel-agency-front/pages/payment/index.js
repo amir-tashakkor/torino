@@ -1,3 +1,4 @@
+import PaymentPage from "@/templates/PaymentPage";
 import Head from "next/head";
 
 function Payment() {
@@ -7,7 +8,7 @@ function Payment() {
         <title>تورینو | پرداخت</title>
         <meta name="description" content="Torino is a travel agency" />
       </Head>
-      <h1>Payment</h1>
+      <PaymentPage />
     </div>
   );
 }
